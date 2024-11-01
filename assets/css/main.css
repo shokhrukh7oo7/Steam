@@ -1,0 +1,162 @@
+/* HEADER CSS START */
+/* ========= navbar top wrapper start ========== */
+.navbar-wrapper .navbar-top-wrapper {
+  border-bottom: 1px solid var(--line);
+}
+.navbar-wrapper .navbar-top-wrapper-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 0;
+}
+.navbar-wrapper .navbar-top-wrapper-container .navbar-top-social-links-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navbar-wrapper
+  .navbar-top-wrapper-container
+  .navbar-top-social-links-wrapper
+  a {
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--light-black);
+}
+.navbar-wrapper
+  .navbar-top-wrapper-container
+  .navbar-top-social-links-wrapper
+  .social-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar-wrapper
+  .navbar-top-wrapper-container
+  .navbar-top-social-links-wrapper
+  a
+  img {
+  width: 15px;
+  padding-top: 5px;
+}
+
+.navbar-wrapper .navbar-top-wrapper-container .navbar-top-call-wrapper a {
+  display: flex;
+  align-items: center;
+  color: var(--light-black);
+  font-size: 13px;
+  font-weight: 500;
+  gap: 15px;
+}
+.navbar-wrapper .navbar-top-wrapper-container .navbar-top-call-wrapper a img {
+  width: 13px;
+}
+/* ========= navbar top wrapper end ========== */
+
+/* ========= navbar middle wrapper start ========== */
+.navbar-wrapper .navbar-middle-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 0;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 0.05rem;
+}
+.navbar-wrapper .navbar {
+  padding: 20px 0;
+}
+.navbar-wrapper .navbar .navbar-brand {
+  font-weight: 700;
+  font-size: clamp(24px, 3vw, 35px);
+  color: var(--black);
+}
+.navbar-wrapper .navbar .navbar-collapse {
+  gap: 20px;
+}
+.navbar-wrapper .navbar .navbar-collapse a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  margin-right: 10px;
+  padding: 8.5px 20px;
+  color: var(--white);
+  background-color: var(--purple);
+  font-size: clamp(13px, 1vw, 14px);
+}
+.navbar-wrapper .navbar .navbar-collapse .search-wrapper {
+  width: 100%;
+  max-width: 768px;
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+}
+.navbar-wrapper .navbar .navbar-collapse .search-wrapper .searchTerm {
+  width: 100%;
+  border: 1px solid var(--purple);
+  border-right: none;
+  padding: 7px 15px;
+  border-radius: 12px 0 0 12px;
+  outline: none;
+  color: var(--black);
+  font-size: clamp(13px, 1vw, 14px);
+}
+.navbar-wrapper .navbar .navbar-collapse .search-wrapper .searchTerm:focus {
+  color: var(--purple);
+}
+.navbar-wrapper .navbar .navbar-collapse .search-wrapper .searchButton {
+  width: 60px;
+  height: 41px;
+  border: 1px solid var(--purple);
+  background: var(--purple);
+  text-align: center;
+  color: #fff;
+  border-radius: 0 12px 12px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.navbar-wrapper .navbar-leave-request-btn-wrapper .leave-request-btn {
+  border-radius: 12px;
+  padding: 9.65px 30px;
+  font-size: clamp(13px, 1vw, 14px);
+  white-space: nowrap;
+  font-weight: 400;
+  color: var(--white);
+  background-color: var(--purple);
+}
+/* ========= navbar middle wrapper end ========== */
+
+/* ========= navbar bottom wrapper start ========== */
+.navbar-wrapper .navbar-bottom-wrapper-box {
+  padding: 8px 0;
+  background-color: var(--grey);
+}
+.navbar-wrapper .navbar-bottom-wrapper-box .navbar-bottom-wrapper ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* gap: 100px; */
+  flex-wrap: wrap;
+}
+.navbar-wrapper .navbar-bottom-wrapper-box .navbar-bottom-wrapper ul {
+  padding: 0;
+  margin: 0;
+}
+.navbar-wrapper .navbar-bottom-wrapper-box .navbar-bottom-wrapper ul li {
+  /* padding-right: 80px; */
+  padding-right: clamp(22px, 7vw, 80px);
+}
+.navbar-wrapper .navbar-bottom-wrapper-box .navbar-bottom-wrapper ul li a {
+  font-size: clamp(13px, 2vw, 18px);
+  font-weight: 400;
+  color: var(--black);
+}
+
+/* ========= navbar bottom wrapper end ========== */
+
+/* HEADER CSS END */

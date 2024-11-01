@@ -1,0 +1,31 @@
+/* RESPONSIVE */
+/* ========== 992 ========== */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    margin: 20px 0;
+  }
+  .navbar-wrapper .navbar .navbar-collapse .search-wrapper {
+    max-width: 992px;
+  }
+  .navbar-leave-request-btn-wrapper {
+    margin-top: 10px;
+  }
+}
+
+/* ========== 768 ========== */
+@media (max-width: 768px) {
+}
+
+/* ========== 576 ========== */
+@media (max-width: 576px) {
+}
+
+/* ========== 395 ========== */
+@media (max-width: 395px) {
+  .navbar-wrapper
+    .navbar-top-wrapper-container
+    .navbar-top-social-links-wrapper
+    .social-box {
+    display: none;
+  }
+}
