@@ -86,7 +86,7 @@
   padding: 8.5px 20px;
   color: var(--white);
   background-color: var(--purple);
-  font-size: clamp(13px, 1vw, 14px);
+  font-size: clamp(13px, 1.5vw, 16px);
 }
 .navbar-wrapper .navbar .navbar-collapse .search-wrapper {
   width: 100%;
@@ -103,7 +103,7 @@
   border-radius: 12px 0 0 12px;
   outline: none;
   color: var(--black);
-  font-size: clamp(13px, 1vw, 14px);
+  font-size: clamp(13px, 1.5vw, 16px);
 }
 .navbar-wrapper .navbar .navbar-collapse .search-wrapper .searchTerm:focus {
   color: var(--purple);
@@ -123,11 +123,16 @@
 .navbar-wrapper .navbar-leave-request-btn-wrapper .leave-request-btn {
   border-radius: 12px;
   padding: 9.65px 30px;
-  font-size: clamp(13px, 1vw, 14px);
+  font-size: clamp(13px, 1.5vw, 16px);
   white-space: nowrap;
   font-weight: 400;
   color: var(--white);
   background-color: var(--purple);
+}
+.navbar-wrapper .navbar-leave-request-btn-wrapper .leave-request-btn:hover {
+    background-color: var(--white);
+    color: var(--purple);
+    border-color: var(--purple);
 }
 /* ========= navbar middle wrapper end ========== */
 
@@ -158,5 +163,63 @@
 }
 
 /* ========= navbar bottom wrapper end ========== */
-
 /* HEADER CSS END */
+
+/* ========================================================================================== */
+
+/* FOOTER CSS START */
+/* ========= footer top wrapper start ========== */
+.footer-top-wrapper {
+    padding: 6px 0;
+    background-color: var(--purple);
+}
+.footer-top-wrapper .footer-top-wrapper-box .footer-top-title {
+    color: var(--white);
+    font-weight: 600;
+    margin: 0;
+    line-height: clamp(18px, 2.3vw, 27px);
+    font-size: clamp(15px, 2vw, 24px);
+}
+.footer-top-wrapper .footer-top-wrapper-box form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.footer-top-wrapper .footer-top-wrapper-box form input {
+    border-color: transparent;
+    padding: 15px;
+    color: var(--white);
+    border-radius: 14px;
+    background-color: var(--bg-color);
+    font-size: clamp(13px, 1.5vw, 16px);
+}
+.footer-top-wrapper .footer-top-wrapper-box form input:focus {
+    box-shadow: 0 0 0 .05rem rgba(255, 255, 255, 1);
+}
+.footer-top-wrapper .footer-top-wrapper-box form input::placeholder {
+    color: var(--white);
+    font-size: clamp(13px, 1.5vw, 16px);
+}
+.footer-top-wrapper .footer-top-wrapper-box form .footer-top-btn {
+    background-color: var(--white);
+    color: var(--purple);
+    padding: 15px 25px;
+    border-radius: 14px;
+    font-size: clamp(13px, 1.5vw, 16px);
+}
+.footer-top-wrapper .footer-top-wrapper-box form .footer-top-btn:hover {
+    background-color: var(--purple);
+    border-color: var(--white);
+    color: var(--white);
+}
+/* ========= footer top wrapper end ========== */
+
+/* ========= footer middle wrapper start ========== */
+
+/* ========= footer middle wrapper end ========== */
+/* FOOTER CSS END */
+
+
+
+

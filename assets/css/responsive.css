@@ -28,4 +28,8 @@
     .social-box {
     display: none;
   }
+  .footer-top-wrapper .footer-top-wrapper-box form {
+    align-items: end !important;
+    flex-direction: column;
+  }
 }
