@@ -16,6 +16,24 @@
 @media (max-width: 768px) {
 }
 
+/* ========== 660 ========== */
+@media (max-width: 660px) {
+  .footer-bottom-wrapper
+    .footer-bottom-wrapper-box
+    .footer-bottom-items
+    .footer-bottom-right-wrapper {
+    display: block;
+  }
+  .footer-bottom-wrapper
+    .footer-bottom-wrapper-box
+    .footer-bottom-items
+    .footer-bottom-right-wrapper
+    .online-chat-wrapper {
+    margin-top: 10px;
+  }
+
+}
+
 /* ========== 576 ========== */
 @media (max-width: 576px) {
 }
@@ -32,4 +50,10 @@
     align-items: end !important;
     flex-direction: column;
   }
+  .footer-bottom-wrapper
+  .footer-bottom-wrapper-box
+  .footer-bottom-items
+  .footer-bootom-left-wrapper {
+  gap: 20px;
+}
 }
