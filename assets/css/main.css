@@ -216,7 +216,52 @@
 /* ========= footer top wrapper end ========== */
 
 /* ========= footer middle wrapper start ========== */
-
+.footer-middle-wrapper {
+    padding: 43px 0;
+}
+.footer-middle-wrapper .footer-middle-header {
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: clamp(16px, 2vw, 20px);
+    color: var(--black);
+}
+.footer-middle-wrapper .footer-middle-links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 400;
+    color: var(--light-black);
+    font-size: clamp(14px, 1.5vw, 16px);
+}
+.footer-middle-wrapper .footer-middle-links .link {
+    font-weight: 400;
+    color: var(--light-black);
+    font-size: clamp(14px, 1.5vw, 16px);
+}
+.footer-middle-wrapper .footer-middle-links .link a {
+    font-weight: 400;
+    color: var(--light-black);
+    font-size: clamp(14px, 1.5vw, 16px);
+}
+.footer-middle-wrapper .footer-middle-links .link-phone a {
+    color: var(--black);
+    font-weight: 400;
+    font-size: clamp(16px, 1.5vw, 18px);
+}
+.footer-middle-wrapper .footer-middle-links .link a:hover {
+    color: var(--purple);
+}
+.footer-middle-wrapper .footer-middle-header-none {
+    color: transparent;
+}
+.footer-middle-wrapper .footer-middle-btn {
+    color: var(--purple);
+    font-weight: 400;
+    font-size: clamp(16px, 1.5vw, 18px);
+    padding: 0;
+}
 /* ========= footer middle wrapper end ========== */
 /* FOOTER CSS END */
 
