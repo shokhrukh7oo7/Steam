@@ -41,6 +41,12 @@
   .request-modal .request-modal-body .requset-modal-left {
     width: 100%;
   }
+  .order-call-modal .order-call-modal-body .order-call-modal-right {
+    display: none;
+  }
+  .order-call-modal .order-call-modal-body .order-call-modal-left {
+    width: 100%;
+  }
 }
 
 /* ========== 395 ========== */
