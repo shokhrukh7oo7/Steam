@@ -185,6 +185,208 @@
 /* ========================================================================================== */
 
 /* MAIN CSS START */
+/* ----- card swiper css start ----- */
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ap-tab {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.ap-tab-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  gap: 25px;
+}
+
+.ap-tab-item {
+  list-style: none;
+  background-color: var(--grey);
+  color: var(--black);
+  text-align: center;
+  cursor: pointer;
+  padding: 15px 20px;
+  font-weight: 400;
+  font-size: clamp(13px, 1.5vw, 18px);
+  border: 1px solid var(--grey);
+  border-radius: 12px;
+}
+
+.ap-tab-item.active {
+  background-color: var(--white);
+  color: var(--purple);
+  border: 1px solid var(--purple);
+}
+
+.ap-tab-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.card {
+  width: 100%;
+  border-radius: 22px;
+  border-color: var(--border-color);
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 255 / 231;
+  height: auto;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+.card h4 {
+  color: var(--black);
+  font-weight: 600;
+  font-size: clamp(16px, 2.5vw, 22px);
+  padding: 0 0 0 20px;
+  margin-top: 10px;
+}
+
+.card .sale {
+  color: var(--light-black);
+  font-size: clamp(14px, 2vw, 17px);
+  padding: 0 0 0 20px;
+  margin-bottom: 10px;
+  text-decoration: line-through;
+}
+.card .product-summ {
+  color: var(--black);
+  font-weight: 600;
+  font-size: clamp(14px, 2vw, 18px);
+  padding: 0 0 0 20px;
+  margin-bottom: 10px;
+}
+
+.card .view-products {
+  background-color: var(--purple);
+  color: var(--white);
+  font-weight: 400;
+  font-size: clamp(13px, 1.5vw, 16px);
+  margin: 0 20px 20px;
+  border-radius: 16px;
+}
+.card .view-products:hover {
+  background-color: var(--white);
+  color: var(--purple);
+  border-color: var(--purple);
+}
+/* ----- card swiper css end ----- */
+
+/* ----- construction service css start ----- */
+.construction-service-wrapper {
+  padding: 80px 0;
+}
+.construction-service-wrapper .construction-service-info .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.construction-service-wrapper .construction-service-info .item img {
+  width: 100%;
+  max-width: 82px;
+}
+.construction-service-wrapper
+  .construction-service-info
+  .item
+  .construction-service-info-header-title {
+  color: var(--black);
+  font-weight: 600;
+  font-size: clamp(14px, 2vw, 18px);
+  margin: 0;
+  text-transform: uppercase;
+}
+.construction-service-wrapper
+  .construction-service-info
+  .item
+  .construction-service-info-description-title {
+  color: var(--black);
+  font-weight: 400;
+  font-size: clamp(13px, 2vw, 17px);
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  margin: 0;
+}
+.construction-service-wrapper .construction-service-banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1110 / 340;
+  margin-top: 62px;
+}
+.construction-service-wrapper .construction-service-banner img {
+  width: 100%;
+}
+.construction-service-wrapper
+  .construction-service-banner
+  .construction-service-banner-title-wrapper {
+    padding: clamp(5px, 10vw, 100px);
+}
+.construction-service-wrapper
+  .construction-service-banner
+  .construction-service-banner-title-wrapper
+  .construction-service-banner-header-title {
+  color: var(--white);
+  font-weight: 500;
+  font-size: clamp(18px, 3vw, 46px);
+}
+.construction-service-wrapper
+  .construction-service-banner
+  .construction-service-banner-title-wrapper
+  .construction-service-banner-description-title {
+  color: var(--border-color);
+  font-weight: 400;
+  font-size: clamp(13px, 2vw, 16px);
+  width: 100%;
+  max-width: 370px;
+}
+.construction-service-wrapper
+  .construction-service-banner
+  .construction-service-banner-title-wrapper
+  .constuction-service-banner-btn {
+    color: var(--black);
+    background-color: var(--orange);
+    border-radius: 12px;
+    padding: 15px 25px;
+    font-size: clamp(11px, 1.5vw, 18px);
+  }
+/* ----- construction service css end ----- */
+
 /* ----- request modal css start ----- */
 .request-modal {
   position: fixed;

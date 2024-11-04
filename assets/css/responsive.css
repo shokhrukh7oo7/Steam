@@ -1,5 +1,13 @@
 /* RESPONSIVE */
 /* ========== 992 ========== */
+@media (max-width: 1200px) {
+  .ap-tab-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ========== 992 ========== */
 @media (max-width: 992px) {
   .navbar-collapse {
     margin: 20px 0;
@@ -14,6 +22,10 @@
 
 /* ========== 768 ========== */
 @media (max-width: 768px) {
+  .ap-tab-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* ========== 660 ========== */
@@ -47,6 +59,13 @@
   .order-call-modal .order-call-modal-body .order-call-modal-left {
     width: 100%;
   }
+  .ap-tab-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .construction-service-wrapper .construction-service-banner {
+    background-position: right;
+  }
 }
 
 /* ========== 395 ========== */
@@ -66,5 +85,9 @@
     .footer-bottom-items
     .footer-bootom-left-wrapper {
     gap: 20px;
+  }
+  .ap-tab-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
