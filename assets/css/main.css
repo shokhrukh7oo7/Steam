@@ -105,10 +105,18 @@
   color: var(--black);
   font-size: clamp(13px, 1.5vw, 16px);
 }
-.navbar-wrapper .navbar .navbar-collapse .search-wrapper .searchTerm::placeholder {
-    color: var(--light-black);
+.navbar-wrapper
+  .navbar
+  .navbar-collapse
+  .search-wrapper
+  .searchTerm::placeholder {
+  color: var(--light-black);
 }
-.navbar-wrapper .navbar .navbar-collapse .search-wrapper .searchTerm:focus::placeholder{
+.navbar-wrapper
+  .navbar
+  .navbar-collapse
+  .search-wrapper
+  .searchTerm:focus::placeholder {
   color: var(--purple);
 }
 .navbar-wrapper .navbar .navbar-collapse .search-wrapper .searchButton {
@@ -164,11 +172,171 @@
   font-weight: 400;
   color: var(--black);
 }
-.navbar-wrapper .navbar-bottom-wrapper-box .navbar-bottom-wrapper ul li a:hover {
-    color: var(--purple);
+.navbar-wrapper
+  .navbar-bottom-wrapper-box
+  .navbar-bottom-wrapper
+  ul
+  li
+  a:hover {
+  color: var(--purple);
 }
 /* ========= navbar bottom wrapper end ========== */
 /* HEADER CSS END */
+/* ========================================================================================== */
+
+/* MAIN CSS START */
+/* ----- request modal css start ----- */
+.request-modal {
+  position: fixed;
+  width: 100%;
+  max-width: 700px;
+  background-color: var(--white);
+  padding: 25px;
+  border-radius: 16px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+.request-modal .request-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.request-modal .request-modal-header .request-modal-header-title {
+  font-weight: 600;
+  color: var(--black);
+  margin: 0;
+  font-size: clamp(14px, 2.5vw, 25px);
+}
+.request-modal .request-modal-body {
+  display: flex;
+  justify-content: normal;
+}
+.request-modal .request-modal-body .requset-modal-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+.request-modal
+  .request-modal-body
+  .requset-modal-left
+  .requset-modal-description {
+  color: var(--black);
+  margin: 0;
+  font-size: clamp(16px, 1.5vw, 18px);
+  line-height: clamp(16px, 1.5vw, 20px);
+  margin-bottom: 40px;
+}
+.request-modal .request-modal-body .requset-modal-left form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.request-modal .request-modal-body .requset-modal-left form .form-control {
+  padding: 15px;
+  border-color: var(--border-color);
+  border-radius: 14px;
+}
+.request-modal
+  .request-modal-body
+  .requset-modal-left
+  form
+  .form-control::placeholder {
+  color: var(--light-black);
+  font-size: clamp(13px, 1.5vw, 16px);
+}
+.request-modal
+  .request-modal-body
+  .requset-modal-left
+  form
+  .form-control:focus {
+  box-shadow: 0 0 0 0.05rem var(--purple);
+}
+.request-modal
+  .request-modal-body
+  .requset-modal-left
+  form
+  .form-control:focus::placeholder {
+  color: var(--purple);
+}
+.request-modal .request-modal-body .requset-modal-left form .request-modal-btn {
+  background-color: var(--purple);
+  width: 100%;
+  color: var(--white);
+  padding: 15px 0;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  font-size: clamp(13px, 1.5vw, 16px);
+}
+.request-modal
+  .request-modal-body
+  .requset-modal-left
+  form
+  .request-modal-btn:hover {
+  background-color: var(--white);
+  border-color: var(--purple);
+  color: var(--purple);
+}
+.request-modal
+  .request-modal-body
+  .requset-modal-left
+  .request-modal-checkbox-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.request-modal
+  .request-modal-body
+  .requset-modal-left
+  .request-modal-checkbox-wrapper
+  .request-checkbox {
+  width: 20px;
+  height: 20px;
+}
+.request-modal
+  .request-modal-body
+  .requset-modal-left
+  .request-modal-checkbox-wrapper
+  .request-modal-checkbox-title {
+  margin: 0;
+  color: var(--black);
+  margin: 0;
+  font-size: clamp(14px, 1.5vw, 16px);
+  line-height: clamp(18px, 1.5vw, 18px);
+}
+.request-modal
+  .request-modal-body
+  .requset-modal-left
+  .request-modal-checkbox-wrapper
+  .request-modal-checkbox-title
+  a {
+  color: var(--purple);
+}
+.request-modal .request-modal-body .requset-modal-right img {
+  width: 100%;
+  max-width: 380px;
+}
+/*----- request modal css end ----- */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+}
+.hidden {
+  display: none;
+}
+/* MAIN CSS END */
 
 /* ========================================================================================== */
 

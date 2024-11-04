@@ -88,11 +88,7 @@
                 <a href="#" class="catalog-button">
                   <i class="fas fa-bars"></i> Каталог
                 </a>
-                <input
-                  type="text"
-                  class="searchTerm"
-                  placeholder="Поиск..."
-                />
+                <input type="text" class="searchTerm" placeholder="Поиск..." />
                 <button type="submit" class="searchButton">
                   <i class="fa fa-search"></i>
                 </button>
@@ -135,6 +131,43 @@
       <!-- NAV END -->
     </header>
     <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <div class="request-modal" id="request-modal">
+      <div class="request-modal-header">
+        <h1 class="request-modal-header-title">ОСТАВЬТЕ ВАШИ КОНТАКТЫ</h1>
+        <button class="btn close-btn" id="close-btn">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <div class="request-modal-body">
+        <div class="requset-modal-left">
+          <p class="requset-modal-description">
+            Мы свяжимся с вами и рассчитаем стоимость проекта
+          </p>
+
+          <form>
+            <input type="text" class="form-control request-modal-input" placeholder="Введите свое имя" required>
+            <input type="tel" class="form-control request-modal-input" placeholder="+998(__) ___-__-__" required>
+            <button class="btn request-modal-btn" id="request-modal-btn">Оставить заявку</button>
+          </form>
+
+          <div class="request-modal-checkbox-wrapper">
+            <input type="checkbox" class="request-checkbox">
+            <p class="request-modal-checkbox-title">
+                Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#">политикой конфиденциальности</a>
+            </p>
+          </div>
+        </div>
+        <div class="requset-modal-right">
+            <img src="/assets/images/modal/request-modal.png" alt="image">
+            <div class="around-image"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <!-- MAIN END -->
 
     <!-- FOOTER START -->
     <footer>
@@ -312,6 +345,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- requset modal js -->
+    <script src="/assets/js/modal.js"></script>
+    <!-- main js -->
     <script src="/assets/js/main.js"></script>
   </body>
 </html>
