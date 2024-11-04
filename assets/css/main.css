@@ -209,6 +209,7 @@
   color: var(--black);
   margin: 0;
   font-size: clamp(14px, 2.5vw, 25px);
+  text-transform: uppercase;
 }
 .request-modal .request-modal-body {
   display: flex;
@@ -350,6 +351,7 @@
   font-size: clamp(14px, 2.5vw, 25px);
   width: 100%;
   max-width: 350px;
+  text-transform: uppercase;
 }
 .order-call-modal .order-call-modal-body {
   display: flex;
