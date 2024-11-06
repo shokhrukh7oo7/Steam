@@ -168,7 +168,7 @@
   padding-right: clamp(22px, 7vw, 80px);
 }
 .navbar-wrapper .navbar-bottom-wrapper-box .navbar-bottom-wrapper ul li a {
-  font-size: clamp(13px, 2vw, 18px);
+  font-size: clamp(15px, 2vw, 18px);
   font-weight: 400;
   color: var(--black);
 }
@@ -228,7 +228,7 @@ swiper-slide img {
   cursor: pointer;
   padding: 15px 20px;
   font-weight: 400;
-  font-size: clamp(13px, 1.5vw, 18px);
+  font-size: clamp(14px, 1.5vw, 18px);
   border: 1px solid var(--grey);
   border-radius: 12px;
 }
@@ -267,14 +267,14 @@ swiper-slide img {
 .card h4 {
   color: var(--black);
   font-weight: 600;
-  font-size: clamp(16px, 2.5vw, 22px);
+  font-size: clamp(18px, 2.5vw, 22px);
   padding: 0 0 0 20px;
   margin-top: 10px;
 }
 
 .card .sale {
   color: var(--light-black);
-  font-size: clamp(14px, 2vw, 17px);
+  font-size: clamp(15px, 2vw, 17px);
   padding: 0 0 0 20px;
   margin-bottom: 10px;
   text-decoration: line-through;
@@ -282,7 +282,7 @@ swiper-slide img {
 .card .product-summ {
   color: var(--black);
   font-weight: 600;
-  font-size: clamp(14px, 2vw, 18px);
+  font-size: clamp(15px, 2vw, 18px);
   padding: 0 0 0 20px;
   margin-bottom: 10px;
 }
@@ -291,7 +291,7 @@ swiper-slide img {
   background-color: var(--purple);
   color: var(--white);
   font-weight: 400;
-  font-size: clamp(13px, 1.5vw, 16px);
+  font-size: clamp(15px, 1.5vw, 16px);
   margin: 0 20px 20px;
   border-radius: 16px;
 }
@@ -323,7 +323,7 @@ swiper-slide img {
   .construction-service-info-header-title {
   color: var(--black);
   font-weight: 600;
-  font-size: clamp(14px, 2vw, 18px);
+  font-size: clamp(16px, 2vw, 18px);
   margin: 0;
   text-transform: uppercase;
 }
@@ -333,7 +333,7 @@ swiper-slide img {
   .construction-service-info-description-title {
   color: var(--black);
   font-weight: 400;
-  font-size: clamp(13px, 2vw, 17px);
+  font-size: clamp(15px, 2vw, 17px);
   width: 100%;
   max-width: 300px;
   text-align: center;
@@ -355,7 +355,7 @@ swiper-slide img {
 .construction-service-wrapper
   .construction-service-banner
   .construction-service-banner-title-wrapper {
-    padding: clamp(5px, 10vw, 100px);
+  padding: clamp(5px, 10vw, 100px);
 }
 .construction-service-wrapper
   .construction-service-banner
@@ -364,6 +364,7 @@ swiper-slide img {
   color: var(--white);
   font-weight: 500;
   font-size: clamp(18px, 3vw, 46px);
+  text-transform: uppercase;
 }
 .construction-service-wrapper
   .construction-service-banner
@@ -371,7 +372,7 @@ swiper-slide img {
   .construction-service-banner-description-title {
   color: var(--border-color);
   font-weight: 400;
-  font-size: clamp(13px, 2vw, 16px);
+  font-size: clamp(15px, 2vw, 16px);
   width: 100%;
   max-width: 370px;
 }
@@ -379,13 +380,119 @@ swiper-slide img {
   .construction-service-banner
   .construction-service-banner-title-wrapper
   .constuction-service-banner-btn {
-    color: var(--black);
-    background-color: var(--orange);
-    border-radius: 12px;
-    padding: 15px 25px;
-    font-size: clamp(11px, 1.5vw, 18px);
-  }
+  color: var(--black);
+  background-color: var(--orange);
+  border-radius: 12px;
+  padding: 15px 25px;
+  font-size: clamp(15px, 1.5vw, 18px);
+}
 /* ----- construction service css end ----- */
+
+/* ----- catalog products css start */
+#catalog-products {
+  background-color: var(--grey);
+}
+.catalog-products-wrapper {
+  padding: 60px 0;
+}
+.catalog-products-wrapper
+  .catalog-products-wrapper-header-wrapper
+  .catalog-products-wrapper-header-title {
+  color: var(--black);
+  font-weight: 600;
+  font-size: clamp(24px, 3vw, 35px);
+  text-align: center;
+  text-transform: uppercase;
+}
+.catalog-products-wrapper
+  .catalog-products-wrapper-header-wrapper
+  .download-file {
+  color: var(--purple);
+  font-weight: 400;
+  font-size: clamp(16px, 2vw, 20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.catalog-products-wrapper .catalog-item {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: start;
+  gap: 20px;
+  border: 1px solid Var(--border-color);
+  border-radius: 18px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  /* height: auto; */
+  min-height: 100%;
+}
+.catalog-products-wrapper .catalog-item .catalog-header-image {
+  width: 100%;
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
+}
+.catalog-products-wrapper .catalog-item .catalog-product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 0 20px;
+}
+.catalog-products-wrapper
+  .catalog-item
+  .catalog-product-header
+  .catalog-product-header-title {
+  color: var(--black);
+  font-weight: 600;
+  font-size: clamp(18px, 2vw, 20px);
+  width: 100%;
+  max-width: clamp(110px, 20vw, 250px);
+  text-transform: uppercase;
+  min-height: 50px;
+}
+.catalog-products-wrapper .catalog-item .catalog-product-header img {
+  position: absolute;
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  right: 0;
+  top: -100px;
+}
+
+.catalog-products-wrapper .catalog-item .catalog-product-body {
+  padding: 0 20px;
+}
+.catalog-products-wrapper
+  .catalog-item
+  .catalog-product-body
+  .catalog-product-body-description {
+  font-weight: 400;
+  color: var(--black);
+  font-size: clamp(15px, 1.5vw, 17px);
+  margin: 0;
+  min-height: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.catalog-products-wrapper .catalog-item .catalog-product-btn {
+  color: var(--purple);
+  font-weight: 400;
+  font-size: clamp(15px, 1.5vw, 16px);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 5px 10px;
+}
+/* ----- catalog products css end */
 
 /* ----- request modal css start ----- */
 .request-modal {

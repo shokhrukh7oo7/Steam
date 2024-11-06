@@ -5,6 +5,12 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
+  .catalog-products-wrapper
+  .catalog-item
+  .catalog-product-body
+  .catalog-product-body-description {
+    min-height: 130px;
+  }
 }
 
 /* ========== 992 ========== */
@@ -25,6 +31,12 @@
   .ap-tab-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .catalog-products-wrapper
+  .catalog-item
+  .catalog-product-body
+  .catalog-product-body-description {
+    min-height: 90px;
   }
 }
 
@@ -89,5 +101,6 @@
   .ap-tab-list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    width: 100%;
   }
 }
