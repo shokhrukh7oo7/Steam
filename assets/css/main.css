@@ -186,6 +186,20 @@
 
 /* MAIN CSS START */
 /* ----- card swiper css start ----- */
+.category-product-wrapper {
+  padding-top: 40px;
+}
+.category-product-wrapper .category-product-header-wrapper {
+  margin-top: 30px;
+}
+.category-product-wrapper
+  .category-product-header-wrapper
+  .category-product-header {
+  color: var(--black);
+  font-weight: 600;
+  font-size: clamp(24px, 3vw, 35px);
+  text-transform: uppercase;
+}
 swiper-container {
   width: 100%;
   height: 100%;
@@ -210,7 +224,7 @@ swiper-slide img {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .ap-tab-list {
@@ -244,7 +258,7 @@ swiper-slide img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 50px 0;
+  margin: 30px 0;
 }
 
 .card {
@@ -386,6 +400,14 @@ swiper-slide img {
   padding: 15px 25px;
   font-size: clamp(15px, 1.5vw, 18px);
 }
+.construction-service-wrapper
+  .construction-service-banner
+  .construction-service-banner-title-wrapper
+  .constuction-service-banner-btn:hover {
+  background-color: var(--white);
+  border-color: var(--white);
+  color: var(--black);
+}
 /* ----- construction service css end ----- */
 
 /* ----- catalog products css start */
@@ -493,6 +515,75 @@ swiper-slide img {
   margin: 0 5px 10px;
 }
 /* ----- catalog products css end */
+
+/* ----- accessories css start */
+.accessories-card-wrapper {
+  padding: 90px 0;
+}
+.accessories-card-wrapper .accessories-header-titile {
+  color: var(--black);
+  font-weight: 600;
+  font-size: clamp(24px, 3vw, 35px);
+  text-transform: uppercase;
+}
+.accessories-card-wrapper .item {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+}
+.accessories-card-wrapper .item .item-header {
+  background-color: var(--grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.accessories-card-wrapper .item .item-header .accessories-fashion {
+  position: absolute;
+  background-color: var(--red);
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: var(--white);
+  top: 20px;
+  left: 20px;
+}
+.accessories-card-wrapper .item .item-header img {
+  width: 100%;
+  max-width: 200px;
+}
+.accessories-card-wrapper .item .item-body {
+  padding: 20px;
+}
+.accessories-card-wrapper .item .item-body .item-body-header {
+  color: var(--black);
+  font-weight: 600;
+  font-size: clamp(18px, 2.5vw, 22px);
+  margin-top: 10px;
+}
+.accessories-card-wrapper .item .item-body .item-body-sale {
+  color: var(--light-black);
+  font-size: clamp(15px, 2vw, 17px);
+  margin-bottom: 10px;
+  text-decoration: line-through;
+  margin: 0;
+}
+.accessories-card-wrapper .item .item-body .item-body-summ {
+  color: var(--black);
+  font-weight: 600;
+  font-size: clamp(15px, 2vw, 18px);
+  margin-bottom: 10px;
+  margin-bottom: 1.5rem;
+}
+.accessories-card-wrapper .item .item-body .accessories-btn {
+  background-color: var(--purple);
+  color: var(--white);
+  font-weight: 400;
+  font-size: clamp(15px, 1.5vw, 16px);
+  border-radius: 16px;
+  width: 100%;
+}
+/* ----- accessories css end */
 
 /* ----- request modal css start ----- */
 .request-modal {
