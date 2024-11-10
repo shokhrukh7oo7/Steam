@@ -213,7 +213,7 @@
   position: relative;
   z-index: 2;
 }
-.slider {
+#banner-swiper .slider {
   position: relative;
   width: 100%;
   height: clamp(400px, 150vw, 700px);
@@ -221,7 +221,7 @@
   align-items: center;
   overflow: hidden;
 }
-.slide {
+#banner-swiper .slide {
   display: none;
   position: absolute;
   width: 100%;
@@ -229,13 +229,13 @@
   background-size: cover;
   background-position: center;
 }
-.slide.active {
+#banner-swiper .slide.active {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 50px;
 }
-.text-content h1 {
+#banner-swiper .text-content h1 {
   color: var(--white);
   font-weight: 600;
   font-size: clamp(18px, 3vw, 35px);
@@ -243,13 +243,13 @@
   max-width: 500px;
   margin: 0;
 }
-.text-content p {
+#banner-swiper .text-content p {
   color: var(--white);
   font-weight: 400;
   font-size: clamp(15px, 1.5vw, 18px);
   margin: 10px 0;
 }
-.button {
+#banner-swiper .button {
   display: inline-block;
   padding: clamp(10px, 1.5vw, 15px) clamp(10px, 2.5vw, 30px);
   background-color: var(--purple);
@@ -259,35 +259,22 @@
   font-size: clamp(13px, 1vw, 16px);
   margin-top: 20px;
 }
-.image-content {
+#banner-swiper .image-content {
   position: relative;
 }
-.image-content img {
+#banner-swiper .image-content img {
   border-radius: 50%;
   width: 100%;
   max-width: 500px;
   height: auto;
 }
-.quality-guarantee span {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px 20px;
-  border-radius: 20px;
-  margin-right: 10px;
-  font-size: 16px;
-}
-.quality-guarantee .badge {
-  background-color: #4a90e2;
-  padding: 10px 20px;
-  border-radius: 20px;
-  font-size: 16px;
-}
-.pagination {
+#banner-swiper .pagination {
   display: flex;
   align-items: center;
   margin-top: 20px;
   color: white;
 }
-.pagination i {
+#banner-swiper .pagination i {
   font-size: clamp(13px, 2vw, 20px);
   margin: 0 10px;
   cursor: pointer;
@@ -295,10 +282,12 @@
   border-radius: 50%;
   padding: 5px 10px;
 }
-.pagination span {
+#banner-swiper .pagination span {
   font-size: clamp(13px, 2vw, 16px);
 }
 /* ----- home banner swiper css end ----- */
+
+/* ========================================================================================== */
 
 /* ----- card swiper css start ----- */
 .category-product-wrapper {
@@ -431,6 +420,8 @@ swiper-slide img {
 }
 /* ----- card swiper css end ----- */
 
+/* ========================================================================================== */
+
 /* ----- construction service css start ----- */
 .construction-service-wrapper {
   padding: 80px 0;
@@ -524,6 +515,8 @@ swiper-slide img {
   color: var(--black);
 }
 /* ----- construction service css end ----- */
+
+/* ========================================================================================== */
 
 /* ----- catalog products css start */
 #catalog-products {
@@ -631,6 +624,8 @@ swiper-slide img {
 }
 /* ----- catalog products css end */
 
+/* ========================================================================================== */
+
 /* ----- accessories css start */
 .accessories-card-wrapper {
   padding: 90px 0;
@@ -699,6 +694,8 @@ swiper-slide img {
   width: 100%;
 }
 /* ----- accessories css end */
+
+/* ========================================================================================== */
 
 /* ----- footer slider css start */
 .slider-section-header {
@@ -899,6 +896,8 @@ swiper-slide img {
 }
 /* ----- footer slider css end */
 
+/* ========================================================================================== */
+
 /* ----- request modal css start ----- */
 .request-modal {
   position: fixed;
@@ -1038,6 +1037,8 @@ swiper-slide img {
   max-width: 380px;
 }
 /*----- request modal css end ----- */
+
+/* ========================================================================================== */
 
 /*----- order call modal css start ----- */
 .order-call-modal {
@@ -1202,7 +1203,8 @@ swiper-slide img {
 .hidden {
   display: none;
 }
-/* MAIN CSS END */
+
+/* ========================================================================================== */
 
 /* CATALOG PAGE CSS START */
 .catalog-page-wrapper {
@@ -1491,17 +1493,12 @@ swiper-slide img {
 }
 /* SERVICE PAGE CSS END */
 
+/* ========================================================================================== */
+
 /* ABOUT PAGE CSS START */
 .about-page-wrapper {
   padding: 50px 0;
 }
-/* .about-page-wrapper .about-swiper-wrapper swiper-container .swiper .swiper-button-next{
-  width: 25px !important;
-  height: 25px !important;
-  background-color: red !important;
-  border-radius: 50% !important;
-  padding: 5px !important;
-} */
 
 .about-page-wrapper .about-left-wrapper .about-left-header {
   color: var(--black);
@@ -1627,6 +1624,8 @@ swiper-slide img {
 }
 /* ABOUT PAGE CSS END */
 
+/* ========================================================================================== */
+
 /* GALERY PAGE CSS START */
 .galery-container {
   padding: 50px 0;
@@ -1694,6 +1693,8 @@ swiper-slide img {
 }
 /* GALERY PAGE CSS END */
 
+/* ========================================================================================== */
+
 /* CATALOG ITEM PAGE CSS START */
 .catalog-item {
   margin: 30px 0;
@@ -1743,6 +1744,81 @@ swiper-slide img {
 }
 /* CATALOG ITEM PAGE CSS END */
 
+/* ========================================================================================== */
+
+/* CONTACT PAGE CSS START */
+.contact-wrapper {
+  padding: 50px 0;
+}
+.contact-wrapper .contact-left-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-wrapper .contact-left-wrapper .contact-left-header {
+  color: var(--black);
+  font-weight: 600;
+  font-size: clamp(18px, 2vw, 24px);
+  text-transform: uppercase;
+}
+.contact-wrapper .contact-left-wrapper .contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contact-wrapper .contact-left-wrapper .contact-info .contact-info-img {
+  background-color: var(--grey);
+  border-radius: 8px;
+  padding: 20px 5px;
+}
+.contact-wrapper .contact-left-wrapper .contact-info .contact-info-img-loc {
+  background-color: var(--grey);
+  padding: 40px 5px;
+}
+.contact-wrapper .contact-left-wrapper .contact-info .contact-info-title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.contact-wrapper
+  .contact-left-wrapper
+  .contact-info
+  .contact-info-title
+  .contact-info-head {
+  color: var(--black);
+  font-weight: 500;
+  font-size: clamp(14px, 1.5vw, 18px);
+  margin: 0;
+}
+.contact-wrapper
+  .contact-left-wrapper
+  .contact-info
+  .contact-info-title
+  .contact-info-desc {
+  color: var(--black);
+  font-weight: 400;
+  font-size: clamp(14px, 1.5vw, 18px);
+  margin: 0;
+}
+.contact-wrapper
+  .contact-left-wrapper
+  .contact-info
+  .contact-info-title
+  .contact-info-desc span {
+  color: var(--black);
+  font-weight: 500;
+  font-size: clamp(14px, 1.5vw, 18px);
+  margin: 0;
+}
+
+.contact-wrapper .contact-right-wrapper iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 16px;
+}
+/* CONTACT PAGE CSS END */
+
+/* MAIN CSS END */
 /* ========================================================================================== */
 
 /* FOOTER CSS START */

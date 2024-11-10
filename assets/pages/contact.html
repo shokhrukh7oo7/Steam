@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steam</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+    />
+    <!-- FAVICON CSS -->
+    <link rel="shortcut icon" href="/assets/images/services/sauna.png" />
+
+    <!-- Layout custom css -->
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <!-- Main Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <!-- Responsive custom css -->
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <header>
+      <!-- NAV START -->
+      <div class="navbar-wrapper">
+        <div class="navbar-top-wrapper">
+          <div class="container">
+            <div class="navbar-top-wrapper-container">
+              <div class="navbar-top-social-links-wrapper">
+                <a href="#" class="order-call-btn" id="order-call-btn"
+                  >Заказать звонок</a
+                >
+                <div class="social-box">
+                  <a href="#">
+                    <img src="/assets/images/header/viber.svg" alt="image" />
+                  </a>
+                  <a href="#">
+                    <img src="/assets/images/header/whatsapp.svg" alt="image" />
+                  </a>
+                  <a href="#">
+                    <img src="/assets/images/header/telegram.svg" alt="image" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="navbar-top-call-wrapper">
+                <a href="#"
+                  >+998 (50) 074 20 00
+                  <img src="/assets/images/header/call.svg" alt="image" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="/index.html">STEAM</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="search-wrapper">
+                <a href="/assets/pages/catalog.html" class="catalog-button">
+                  <i class="fas fa-bars"></i> Каталог
+                </a>
+                <input type="text" class="searchTerm" placeholder="Поиск..." />
+                <button type="submit" class="searchButton">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+              <div class="navbar-leave-request-btn-wrapper">
+                <button class="btn leave-request-btn" id="leave-request-btn">
+                  Оставить заявку
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="navbar-bottom-wrapper-box">
+          <div class="container">
+            <div class="navbar-bottom-wrapper" id="mobile-menu">
+              <ul>
+                <li>
+                  <a href="/assets/pages/service.html">Услуги</a>
+                </li>
+                <li>
+                  <a href="/assets/pages/about-us.html">О компании</a>
+                </li>
+                <li>
+                  <a href="/assets/pages/galery.html">Галерея</a>
+                </li>
+                <li>
+                  <a href="/assets/pages/contact.html">Контакты</a>
+                </li>
+                <li>
+                  <a href="#" class="promo">
+                    Акции <i class="fa-solid fa-percent"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- NAV END -->
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main>
+      <section>
+        <div class="container">
+          <div class="contact-wrapper">
+            <div class="row">
+              <div class="col-12 col-lg-6 my-3">
+                <div class="contact-left-wrapper">
+                  <h1 class="contact-left-header">
+                    Адрес магазина и сервисного центра
+                  </h1>
+
+                  <div class="contact-info">
+                    <div class="contact-info-img contact-info-img-loc">
+                      <img
+                        src="/assets/images/contact/location.png"
+                        alt="image"
+                      />
+                    </div>
+
+                    <div class="contact-info-title">
+                      <p class="contact-info-head">ул. Фергана йули, 23/3</p>
+                      <p class="contact-info-desc">
+                        Пн - Вт, Чт - Сб 10:00 - 20:00
+                      </p>
+                      <p class="contact-info-desc">Ср, Вс - выходной</p>
+                    </div>
+                  </div>
+                  <div class="contact-info">
+                    <div class="contact-info-img">
+                      <img src="/assets/images/contact/Phone.png" alt="image" />
+                    </div>
+
+                    <div class="contact-info-title">
+                      <p class="contact-info-head">+998 (50) 074 20-20</p>
+                    </div>
+                  </div>
+                  <div class="contact-info">
+                    <div class="contact-info-img">
+                      <img
+                        src="/assets/images/contact/contact-3.png"
+                        alt="image"
+                      />
+                    </div>
+
+                    <div class="contact-info-title">
+                      <p class="contact-info-desc">
+                        Перед посещением магазина, пожалуйста,
+                        <span
+                          >уточняйте наличие рассматриваемой вами модели по
+                          телефону</span>
+                        у менеджера.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 my-3">
+                <div class="contact-right-wrapper">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.210256035185!2d69.28064177643648!3d41.30428940114486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b7cbcdd16f5%3A0x9cff42cb77e725c8!2sFoodMall%20Tashkent!5e0!3m2!1sru!2s!4v1731278835413!5m2!1sru!2s"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--MAIN END -->
+
+    <!-- ----- request modal start ----- -->
+    <div class="request-modal hidden" id="request-modal">
+      <div class="request-modal-header">
+        <h1 class="request-modal-header-title">ОСТАВЬТЕ ВАШИ КОНТАКТЫ</h1>
+        <button class="btn close-btn" id="close-btn">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <div class="request-modal-body">
+        <div class="requset-modal-left">
+          <p class="requset-modal-description">
+            Мы свяжимся с вами и рассчитаем стоимость проекта
+          </p>
+
+          <form>
+            <input
+              type="text"
+              class="form-control request-modal-input"
+              placeholder="Введите свое имя"
+              required
+            />
+            <input
+              type="tel"
+              class="form-control request-modal-input"
+              placeholder="+998(__) ___-__-__"
+              required
+            />
+            <button class="btn request-modal-btn" id="request-modal-btn">
+              Оставить заявку
+            </button>
+          </form>
+
+          <div class="request-modal-checkbox-wrapper">
+            <input type="checkbox" class="request-checkbox" />
+            <p class="request-modal-checkbox-title">
+              Нажимая на кнопку, вы соглашаетесь на обработку персональных
+              данных и <a href="#">политикой конфиденциальности</a>
+            </p>
+          </div>
+        </div>
+        <div class="requset-modal-right">
+          <img src="/assets/images/modal/request-modal.png" alt="image" />
+          <div class="around-image"></div>
+        </div>
+      </div>
+    </div>
+    <!-- ----- request modal end ----- -->
+
+    <!-- ----- order call modal start ----- -->
+    <div class="order-call-modal hidden" id="order-call-modal">
+      <div class="order-call-modal-header">
+        <h1 class="order-call-modal-header-title">
+          МЕНЕДЖЕР ПОЗВОНИТ ВАМ В ТЕЧЕНИИ 5 МИНУТ
+        </h1>
+        <button class="btn close-btn" id="order-close-btn">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <div class="order-call-modal-body">
+        <div class="order-call-modal-left">
+          <p class="order-call-modal-description">
+            ответит на все вопросы и прокосультирует по продуктам Steam
+          </p>
+
+          <form>
+            <input
+              type="tel"
+              class="form-control order-call-modal-input"
+              placeholder="+998(__) ___-__-__"
+              required
+            />
+            <button class="btn order-call-modal-btn" id="order-call-modal-btn">
+              Позвоните мне
+            </button>
+          </form>
+
+          <div class="order-call-modal-checkbox-wrapper">
+            <input type="checkbox" class="order-call-checkbox" />
+            <p class="order-call-modal-checkbox-title">
+              Нажимая на кнопку, вы соглашаетесь на обработку персональных
+              данных и <a href="#">политикой конфиденциальности</a>
+            </p>
+          </div>
+        </div>
+        <div class="order-call-modal-right">
+          <img src="/assets/images/modal/request-modal.png" alt="image" />
+          <div class="around-image"></div>
+        </div>
+      </div>
+    </div>
+    <!-- ----- order call modal end ----- -->
+
+    <div class="overlay hidden" id="overlay"></div>
+
+    <!-- FOOTER START -->
+    <footer>
+      <div class="footer-top-wrapper">
+        <!-- footer top start -->
+        <div class="container">
+          <div class="footer-top-wrapper-box">
+            <div class="row">
+              <div class="col-12 col-md-6 my-3">
+                <p class="footer-top-title">
+                  Оставьте свой адрес электронной почты и получите первыми
+                  скидку на новые продукты
+                </p>
+              </div>
+              <div class="col-12 col-md-6 my-3">
+                <form>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Введите Ваш email"
+                  />
+                  <button class="btn footer-top-btn" id="footer-top-btn">
+                    Подписаться
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer top start -->
+      </div>
+      <div class="footer-middle-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6 my-2">
+              <div class="row">
+                <div class="col-12 col-sm-6 my-2">
+                  <h3 class="footer-middle-header">Каталог товаров</h3>
+                  <ul class="footer-middle-links">
+                    <li class="link">
+                      <a href="#">Печи</a>
+                    </li>
+                    <li class="link">
+                      <a href="#">Камни для сауны</a>
+                    </li>
+                    <li class="link">
+                      <a href="#">Аксессуары</a>
+                    </li>
+                    <li class="link">
+                      <a href="#">Материалы для строительства</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 my-2">
+                  <h3 class="footer-middle-header">Покупателям</h3>
+                  <ul class="footer-middle-links">
+                    <li class="link">
+                      <a href="#">Услуги</a>
+                    </li>
+                    <li class="link">
+                      <a href="#">О компании</a>
+                    </li>
+                    <li class="link">
+                      <a href="#">Контакты</a>
+                    </li>
+                    <li class="link">
+                      <a href="#">Акции</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 my-2">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-6 col-xl-4 my-2">
+                  <h3 class="footer-middle-header">Контакты</h3>
+                  <ul class="footer-middle-links">
+                    <li class="link">Call-центр</li>
+                    <li class="link-phone">
+                      <a href="#">+998 (50) 074 20 00</a>
+                    </li>
+                    <li class="link">Пн-Вс 10:00 - 20:00</li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-6 col-xl-4 my-2">
+                  <h3 class="footer-middle-header footer-middle-header-none">
+                    Контакты
+                  </h3>
+                  <ul class="footer-middle-links">
+                    <li class="link">Call-центр</li>
+                    <li class="link-phone">
+                      <a href="#">+998 (50) 074 20 00</a>
+                    </li>
+                    <li class="link">Пн-Вс 10:00 - 20:00</li>
+                  </ul>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-4 my-2">
+                  <button class="btn footer-middle-btn" id="footer-middle-btn">
+                    Заказать зваонок
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom-wrapper">
+        <div class="container">
+          <div class="footer-bottom-wrapper-box">
+            <div class="footer-bottom-items">
+              <div class="footer-bootom-left-wrapper">
+                <a href="#" class="details">Реквизиты</a>
+                <a href="#" class="details">Политика конфиденциальности</a>
+              </div>
+              <div class="footer-bottom-right-wrapper">
+                <div class="pay-wrapper">
+                  <a href="#">
+                    <img
+                      src="/assets/images/footer/GooglePay.svg"
+                      alt="image"
+                    />
+                  </a>
+                  <a href="#">
+                    <img src="/assets/images/footer/ApplePay.svg" alt="image" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="/assets/images/footer/visa-logo.svg"
+                      alt="image"
+                    />
+                  </a>
+                  <a href="#">
+                    <img src="/assets/images/footer/Mastercard.svg" />
+                  </a>
+                  <a href="#">
+                    <img src="/assets/images/footer/Maestro.svg" alt="image" />
+                  </a>
+                  <a href="#">
+                    <img src="/assets/images/footer/Webmoney.svg" alt="image" />
+                  </a>
+                  <a href="#">
+                    <img src="/assets/images/footer/Qiwi.svg" alt="image" />
+                  </a>
+                </div>
+
+                <div class="online-chat-wrapper">
+                  <p class="online-chat-title">Онлайн чат :</p>
+                  <div class="footer-social-wrapper">
+                    <a href="#"
+                      ><img src="/assets/images/header/viber.svg" alt="image"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="/assets/images/header/whatsapp.svg"
+                        alt="image"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="/assets/images/header/telegram.svg"
+                        alt="image"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- jquery js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- requset modal js -->
+    <script src="/assets/js/modal.js"></script>
+  </body>
+</html>
