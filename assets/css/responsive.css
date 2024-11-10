@@ -94,6 +94,17 @@
   .galery-container .galery-image-wrapper .galery-video-container video {
     height: 400px;
   }
+  .slide.active {
+    flex-direction: column;
+    padding: 0;
+  }
+  .text-content {
+    text-align: center;
+    padding: 0 20px;
+  }
+  .pagination {
+    font-size: clamp(14px, 4vw, 18px);
+  }
 }
 
 /* ========== 660 ========== */
@@ -156,6 +167,12 @@
   }
   .galery-container .galery-image-wrapper .galery-video-container video {
     height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagination i {
+    font-size: 20px;
   }
 }
 
