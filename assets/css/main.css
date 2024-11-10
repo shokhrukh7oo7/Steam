@@ -1380,6 +1380,139 @@ swiper-slide img {
 }
 /* SERVICE PAGE CSS END */
 
+/* ABOUT PAGE CSS START */
+.about-page-wrapper {
+  padding: 50px 0;
+}
+/* .about-page-wrapper .about-swiper-wrapper swiper-container .swiper .swiper-button-next{
+  width: 25px !important;
+  height: 25px !important;
+  background-color: red !important;
+  border-radius: 50% !important;
+  padding: 5px !important;
+} */
+
+.about-page-wrapper .about-left-wrapper .about-left-header {
+  color: var(--black);
+  font-weight: 600;
+  font-size: clamp(18px, 3vw, 35px);
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.about-page-wrapper
+  .about-left-wrapper
+  .about-middle-content-wrapper
+  .about-middle-header-title {
+  color: var(--black);
+  font-weight: 600;
+  font-size: clamp(16px, 2vw, 24px);
+  margin: 0;
+}
+.about-page-wrapper .about-left-wrapper .about-middle-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.about-page-wrapper
+  .about-left-wrapper
+  .about-middle-content-wrapper
+  .about-middle-content-description {
+  color: var(--black);
+  font-weight: 400;
+  font-size: clamp(15px, 1.5vw, 18px);
+}
+.about-page-wrapper .about-left-wrapper .about-bottom-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-page-wrapper
+  .about-left-wrapper
+  .about-bottom-content-wrapper
+  .about-bottom-header-title {
+  color: var(--black);
+  font-weight: 600;
+  font-size: clamp(16px, 2vw, 24px);
+  width: 100%;
+  max-width: 650px;
+}
+.about-page-wrapper .about-left-wrapper .about-bottom-content-wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+.about-page-wrapper .about-left-wrapper .about-bottom-content-wrapper ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.about-page-wrapper
+  .about-left-wrapper
+  .about-bottom-content-wrapper
+  ul
+  li
+  img {
+  width: 30px;
+  height: 30px;
+}
+.about-us-card-container {
+  margin-bottom: 50px;
+}
+.about-us-card-container .about-us-card-header-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.about-us-card-container
+  .about-us-card-header-wrapper
+  .about-us-card-header-title {
+  color: var(--black);
+  font-weight: 600;
+  font-size: clamp(18px, 3vw, 35px);
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+}
+.about-us-card-container
+  .about-us-card-header-wrapper
+  .about-us-card-header-description {
+  color: var(--black);
+  font-weight: 400;
+  font-size: clamp(15px, 1.5vw, 18px);
+}
+.about-us-card-container .about-us-card-wrapper .item {
+  background-color: var(--grey);
+  border-radius: 32px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 300px;
+}
+.about-us-card-container .about-us-card-wrapper .item img {
+  width: 30px;
+  height: 30px;
+}
+.about-us-card-container .about-us-card-wrapper .item .card-header-title {
+  color: var(--black);
+  font-weight: 600;
+  font-size: clamp(16px, 2vw, 24px);
+}
+.about-us-card-container .about-us-card-wrapper .item .card-description {
+  color: var(--black);
+  font-weight: 400;
+  font-size: clamp(15px, 1.5vw, 18px);
+}
+/* ABOUT PAGE CSS END */
+
 /* ========================================================================================== */
 
 /* FOOTER CSS START */

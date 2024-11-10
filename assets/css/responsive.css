@@ -32,6 +32,9 @@
     aspect-ratio: 2 / 1;
     border-radius: 0;
   }
+  .service-bottom-information-wrapper .service-bottom-info-wrapper .top-header {
+    max-width: 1200px;
+  }
   .service-bottom-information-wrapper
     .service-bottom-info-image-wrapper
     .service-image-info {

@@ -20,7 +20,9 @@ showRequestBtn.addEventListener("click", () => toggleModal(requestModal, true));
 closeRequestBtn.addEventListener("click", () =>
   toggleModal(requestModal, false)
 );
-serviceBtn.addEventListener("click", () => toggleModal(requestModal, true));
+if (serviceBtn) {
+  serviceBtn.addEventListener("click", () => toggleModal(requestModal, true));
+}
 
 showOrderCallBtn.addEventListener("click", () => toggleModal(orderModal, true));
 closeOrderBtn.addEventListener("click", () => toggleModal(orderModal, false));
@@ -53,10 +55,12 @@ function togglePlay() {
   }
 }
 
-video.addEventListener("play", () => {
-  playButton.style.display = "none";
-});
+if(video){
+  video.addEventListener("play", () => {
+    playButton.style.display = "none";
+  });
+  video.addEventListener("pause", () => {
+    playButton.style.display = "flex";
+  });
+}
 
-video.addEventListener("pause", () => {
-  playButton.style.display = "flex";
-});
