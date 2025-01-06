@@ -1804,7 +1804,8 @@ swiper-slide img {
   .contact-left-wrapper
   .contact-info
   .contact-info-title
-  .contact-info-desc span {
+  .contact-info-desc
+  span {
   color: var(--black);
   font-weight: 500;
   font-size: clamp(14px, 1.5vw, 18px);
@@ -1817,6 +1818,40 @@ swiper-slide img {
   border-radius: 16px;
 }
 /* CONTACT PAGE CSS END */
+
+/* ========================================================================================== */
+/* PRODUCT PAGE START */
+.image-switcher-wrapper {
+  margin: clamp(35px, 5vw, 74px) 0;
+}
+.image-switcher-wrapper .left-switcher-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(10px, 1.5vw, 30px);
+}
+.image-switcher-wrapper .left-switcher-wrapper .top img {
+  width: 100%;
+  max-width: 768px;
+  height: clamp(200px, 50vw, 350px);
+  object-fit: cover;
+  border-radius: clamp(12px, 1vw, 16px);
+}
+.image-switcher-wrapper .left-switcher-wrapper .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: clamp(10px, 1.5vw, 30px);
+}
+.image-switcher-wrapper .left-switcher-wrapper .bottom img {
+  width: 100%;
+  max-width: clamp(45px, 6vw, 82px);
+  object-fit: cover;
+  height: clamp(45px, 6vw, 82px);
+  border-radius: clamp(12px, 1vw, 16px);
+}
+/* PRODUCT PAGE END */
 
 /* MAIN CSS END */
 /* ========================================================================================== */

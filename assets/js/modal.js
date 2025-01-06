@@ -64,3 +64,13 @@ if(video){
   });
 }
 
+// products page image switcher js start
+const topImage = document.querySelector(".left-switcher-wrapper .top img");
+const bottomImage = document.querySelectorAll(".left-switcher-wrapper .bottom img");
+
+bottomImage.forEach((img) => {
+  img.addEventListener("click", (e) => {
+    topImage.src = img.src;
+  });
+});
+// products page image switcher js end
