@@ -1846,10 +1846,81 @@ swiper-slide img {
 }
 .image-switcher-wrapper .left-switcher-wrapper .bottom img {
   width: 100%;
-  max-width: clamp(45px, 6vw, 82px);
+  max-width: clamp(50px, 6vw, 82px);
   object-fit: cover;
-  height: clamp(45px, 6vw, 82px);
+  height: clamp(50px, 6vw, 82px);
   border-radius: clamp(12px, 1vw, 16px);
+}
+
+.image-switcher-wrapper .right-switcher-wrapper {
+  padding: 0 clamp(30px, 2vw, 50px);
+}
+.image-switcher-wrapper .right-switcher-wrapper .header {
+  width: 100%;
+  max-width: 576px;
+  font-weight: 600;
+  color: var(--black);
+  font-size: clamp(17px, 2vw, 28px);
+  text-transform: uppercase;
+}
+.image-switcher-wrapper
+  .right-switcher-wrapper
+  .switcher-info-wrapper
+  .switcher-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(30px, 5vw, 70px);
+}
+.image-switcher-wrapper .right-switcher-wrapper .switcher-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+.image-switcher-wrapper
+  .right-switcher-wrapper
+  .switcher-info-wrapper
+  .switcher-info
+  .switcher-left-title {
+  color: var(--light-black);
+  font-weight: 400;
+  font-size: clamp(14px, 1.5vw, 18px);
+  margin-bottom: 0;
+}
+.image-switcher-wrapper
+  .right-switcher-wrapper
+  .switcher-info-wrapper
+  .switcher-info
+  .switcher-right-title {
+  color: var(--black);
+  font-weight: 500;
+  font-size: clamp(14px, 1.5vw, 18px);
+  margin-bottom: 0;
+}
+.image-switcher-wrapper .right-switcher-wrapper .extra-header {
+  font-weight: 600;
+  color: var(--black);
+  font-size: clamp(14px, 2vw, 26px);
+}
+.image-switcher-wrapper .right-switcher-wrapper .extra-info {
+  font-weight: 400;
+  color: var(--black);
+  font-size: clamp(13px, 1.5vw, 16px);
+}
+.image-switcher-wrapper .right-switcher-wrapper .sale {
+  color: var(--light-black);
+  font-size: clamp(15px, 2vw, 18px);
+  text-decoration: line-through;
+  margin: 0;
+}
+.image-switcher-wrapper .right-switcher-wrapper .product-summ {
+  color: var(--black);
+  font-weight: 600;
+  font-size: clamp(17px, 2.5vw, 26px);
+  margin-bottom: 10px;
 }
 /* PRODUCT PAGE END */
 

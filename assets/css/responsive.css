@@ -105,6 +105,15 @@
   .pagination {
     font-size: clamp(14px, 4vw, 18px);
   }
+  .image-switcher-wrapper .right-switcher-wrapper .header {
+    max-width: 768px;
+  }
+  .image-switcher-wrapper .right-switcher-wrapper {
+    margin: clamp(25px, 2.5vw, 50px) 0;
+  }
+  .image-switcher-wrapper .right-switcher-wrapper {
+    padding: 0;
+  }
 }
 
 /* ========== 660 ========== */
