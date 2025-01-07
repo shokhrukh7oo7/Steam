@@ -114,6 +114,9 @@
   .image-switcher-wrapper .right-switcher-wrapper {
     padding: 0;
   }
+  .product-information-wrapper {
+    align-items: center;
+  }
 }
 
 /* ========== 660 ========== */

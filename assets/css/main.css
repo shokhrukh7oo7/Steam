@@ -1854,6 +1854,11 @@ swiper-slide img {
 
 .image-switcher-wrapper .right-switcher-wrapper {
   padding: 0 clamp(30px, 2vw, 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: clamp(5px, 0.7vw, 10px);
 }
 .image-switcher-wrapper .right-switcher-wrapper .header {
   width: 100%;
@@ -1903,12 +1908,14 @@ swiper-slide img {
 .image-switcher-wrapper .right-switcher-wrapper .extra-header {
   font-weight: 600;
   color: var(--black);
-  font-size: clamp(14px, 2vw, 26px);
+  font-size: clamp(14px, 1.5vw, 16px);
+  margin: 0;
 }
 .image-switcher-wrapper .right-switcher-wrapper .extra-info {
   font-weight: 400;
-  color: var(--black);
+  color: var(--light-black);
   font-size: clamp(13px, 1.5vw, 16px);
+  margin: 0;
 }
 .image-switcher-wrapper .right-switcher-wrapper .sale {
   color: var(--light-black);
@@ -1920,7 +1927,6 @@ swiper-slide img {
   color: var(--black);
   font-weight: 600;
   font-size: clamp(17px, 2.5vw, 26px);
-  margin-bottom: 10px;
 }
 .image-switcher-wrapper .right-switcher-wrapper .view-product {
   border-radius: 12px;
@@ -1930,6 +1936,61 @@ swiper-slide img {
   font-weight: 400;
   color: var(--white);
   background-color: var(--purple);
+}
+
+.product-information-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: clamp(10px, 1.5vw, 20px);
+  margin: clamp(20px, 3vw, 50px) 0;
+}
+
+.product-information-wrapper .product-information-header {
+  color: var(--black);
+  font-weight: 600;
+  font-size: clamp(17px, 2.5vw, 26px);
+  margin: 0;
+}
+.product-information-wrapper .product-information-description {
+  color: var(--light-black);
+  font-weight: 400;
+  font-size: clamp(13px, 1vw, 14px);
+  margin: 0;
+  width: 100%;
+  max-width: 750px;
+}
+.product-information-wrapper ol {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(5px, 1vw, 15px);
+  padding-left: 1rem;
+}
+.product-information-wrapper ol li {
+  list-style: unset;
+}
+.product-information-wrapper ol li .list-header {
+  color: var(--black);
+  font-weight: 600;
+  font-size: clamp(15px, 1vw, 16px);
+  margin-bottom: 5px;
+}
+.product-information-wrapper ol li .list-description {
+  color: var(--black);
+  font-weight: 400;
+  font-size: clamp(15px, 1vw, 16px);
+  margin: 0;
+}
+.product-information-wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 1rem;
+  margin-bottom: 2rem
+}
+.product-information-wrapper ul li {
+  list-style: unset;
 }
 /* PRODUCT PAGE END */
 
