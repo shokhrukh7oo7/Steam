@@ -1922,6 +1922,15 @@ swiper-slide img {
   font-size: clamp(17px, 2.5vw, 26px);
   margin-bottom: 10px;
 }
+.image-switcher-wrapper .right-switcher-wrapper .view-product {
+  border-radius: 12px;
+  padding: clamp(5px, 0.8vw, 10px) clamp(40px, 7vw, 70px);
+  font-size: clamp(13px, 1.5vw, 16px);
+  white-space: nowrap;
+  font-weight: 400;
+  color: var(--white);
+  background-color: var(--purple);
+}
 /* PRODUCT PAGE END */
 
 /* MAIN CSS END */
