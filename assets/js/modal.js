@@ -55,7 +55,7 @@ function togglePlay() {
   }
 }
 
-if(video){
+if (video) {
   video.addEventListener("play", () => {
     playButton.style.display = "none";
   });
@@ -66,7 +66,9 @@ if(video){
 
 // products page image switcher js start
 const topImage = document.querySelector(".left-switcher-wrapper .top img");
-const bottomImage = document.querySelectorAll(".left-switcher-wrapper .bottom img");
+const bottomImage = document.querySelectorAll(
+  ".left-switcher-wrapper .bottom img"
+);
 
 bottomImage.forEach((img) => {
   img.addEventListener("click", (e) => {
@@ -74,3 +76,49 @@ bottomImage.forEach((img) => {
   });
 });
 // products page image switcher js end
+
+new Glider(document.querySelector(".glider"), {
+  slidesToScroll: 1,
+  slidesToShow: 4.5,
+  draggable: true,
+  loop: true,
+  dots: false,
+  arrows: {
+    prev: ".glider-prev",
+    next: ".glider-next",
+  },
+  responsive: [
+    {
+      // Для экранов шириной 1024px и больше
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 4.5,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      // Для экранов шириной 768px и больше
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3.5,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      // Для экранов шириной 576px и больше
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 2.5,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      // Для экранов меньше 576px
+      breakpoint: 0,
+      settings: {
+        slidesToShow: 1.5,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
