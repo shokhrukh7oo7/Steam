@@ -1928,7 +1928,7 @@ swiper-slide img {
   font-weight: 600;
   font-size: clamp(17px, 2.5vw, 26px);
 }
-.image-switcher-wrapper .right-switcher-wrapper .view-product {
+.image-switcher-wrapper .right-switcher-wrapper .buy-btn {
   border-radius: 12px;
   padding: clamp(5px, 0.8vw, 10px) clamp(40px, 7vw, 70px);
   font-size: clamp(13px, 1.5vw, 16px);
