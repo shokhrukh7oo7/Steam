@@ -8,6 +8,8 @@ const orderModal = document.getElementById("order-call-modal");
 const closeOrderBtn = document.getElementById("order-close-btn");
 const overlay = document.getElementById("overlay");
 
+const buyButtons = document.querySelectorAll('#buy-btn');
+
 const serviceBtn = document.getElementById("service-leave-request-btn");
 // Toggle modal visibility
 const toggleModal = (modal, show = true) => {
@@ -17,9 +19,8 @@ const toggleModal = (modal, show = true) => {
 
 // Event handlers for showing and hiding modals
 showRequestBtn.addEventListener("click", () => toggleModal(requestModal, true));
-closeRequestBtn.addEventListener("click", () =>
-  toggleModal(requestModal, false)
-);
+closeRequestBtn.addEventListener("click", () => toggleModal(requestModal, false));
+
 if (serviceBtn) {
   serviceBtn.addEventListener("click", () => toggleModal(requestModal, true));
 }
@@ -31,6 +32,11 @@ closeOrderBtn.addEventListener("click", () => toggleModal(orderModal, false));
 overlay.addEventListener("click", () => {
   toggleModal(requestModal, false);
   toggleModal(orderModal, false);
+});
+
+// Add event listeners to all buy buttons
+buyButtons.forEach((button) => {
+  button.addEventListener("click", () => toggleModal(requestModal, true));
 });
 
 // Close modals with the Escape key
