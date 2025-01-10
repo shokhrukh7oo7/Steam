@@ -83,48 +83,50 @@ bottomImage.forEach((img) => {
 });
 // products page image switcher js end
 
-new Glider(document.querySelector(".glider"), {
-  slidesToScroll: 1,
-  slidesToShow: 4.5,
-  draggable: true,
-  loop: true,
-  dots: false,
-  arrows: {
-    prev: ".glider-prev",
-    next: ".glider-next",
-  },
-  responsive: [
-    {
-      // Для экранов шириной 1024px и больше
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 4.5,
-        slidesToScroll: 1,
-      },
+if(document.querySelector(".glider")) {
+  new Glider(document.querySelector(".glider"), {
+    slidesToScroll: 1,
+    slidesToShow: 4.5,
+    draggable: true,
+    loop: true,
+    dots: false,
+    arrows: {
+      prev: ".glider-prev",
+      next: ".glider-next",
     },
-    {
-      // Для экранов шириной 768px и больше
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 3.5,
-        slidesToScroll: 1,
+    responsive: [
+      {
+        // Для экранов шириной 1024px и больше
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4.5,
+          slidesToScroll: 1,
+        },
       },
-    },
-    {
-      // Для экранов шириной 576px и больше
-      breakpoint: 576,
-      settings: {
-        slidesToShow: 2.5,
-        slidesToScroll: 1,
+      {
+        // Для экранов шириной 768px и больше
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3.5,
+          slidesToScroll: 1,
+        },
       },
-    },
-    {
-      // Для экранов меньше 576px
-      breakpoint: 0,
-      settings: {
-        slidesToShow: 1.5,
-        slidesToScroll: 1,
+      {
+        // Для экранов шириной 576px и больше
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2.5,
+          slidesToScroll: 1,
+        },
       },
-    },
-  ],
-});
+      {
+        // Для экранов меньше 576px
+        breakpoint: 0,
+        settings: {
+          slidesToShow: 1.5,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+}
